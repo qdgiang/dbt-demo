@@ -1,0 +1,12 @@
+demo:
+  outputs:
+    dev:
+      host: localhost
+      port: 5432
+      user: dbt_user
+      pass: dbt_password
+      dbname: data_warehouse
+      schema: dbt_schema
+      threads: 4
+      type: postgres
+  target: dev

@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: raw_data
+    database: data_warehouse
+    schema: public
+    tables:
+      - name: film
+        columns: 
+          - name: film_id
+            tests:
+              - unique
+              - not_null
+      - name: category
+      - name: film_category
+      - name: language
+      - name: inventory
+      - name: rental
